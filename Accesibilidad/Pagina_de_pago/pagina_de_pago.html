@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+  </head>
+  <body>
+    <header>
+      <h1>Checkout</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>Your Cart</h2>
+        <figure>
+          <img
+            src="https://cdn.freecodecamp.org/curriculum/labs/cube.jpg"
+            alt="Cubo Rubic desarmado"
+          />
+          <figcaption>
+            <p>Left_handed spoon</p>
+            <p>$29.99</p>
+          </figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h2>Payment Information</h2>
+        <form action="">
+          <label for="card-name">
+            Cardholder Name <span aria-hidden="true">*</span>
+          </label>
+          <input type="text" id="card-name" name="card-name" required />
+
+          <label for="card-number">
+            Card Number <span aria-hidden="true">*</span>
+          </label>
+          <input
+            type="text"
+            id="card-number"
+            name="card-number"
+            required
+            aria-describedby="card-number-help"
+          />
+
+          <p id="card-number-help">
+            Please enter your 16-digit card number without spaces or dashes.
+          </p>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
